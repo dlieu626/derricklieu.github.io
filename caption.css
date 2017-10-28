@@ -1,0 +1,89 @@
+@import "compass/css3";
+
+
+
+.screenshot {
+  margin: 0px;
+  position: relative;
+  overflow: hidden;
+}
+
+.screenshot > * { display: block; }
+
+.screenshot-caption-square {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  background: rgba(44,62,80,.4);
+  color: #ffffff;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+
+
+  a {
+    display: table;
+    margin: 0 auto;
+    text-align: center;
+    background: #2c3e50;
+    padding: 6px 12px;
+    color: white;
+    text-decoration: none;
+  }
+}
+
+.screenshot-caption > * {
+  -webkit-transition: opacity 1s ease;
+  -moz-transition: opacity 1s ease;
+  transition: opacity 1s ease;
+  opacity: 0;
+}
+
+.screenshot-caption_top {
+  top: -100%;
+  left: 0;
+}
+.screenshot-caption_topRight {
+  top: -100%;
+  left: 100%;
+}
+.screenshot-caption_right {
+  top: 0;
+  left: 100%;
+}
+.screenshot-caption_bottomRight {
+  top: 100%;
+  left: 100%;
+}
+.screenshot-caption_bottom {
+  top: 100%;
+  left: 0;
+}
+.screenshot-caption_bottomLeft {
+  top: 100%;
+  left: -100%;
+}
+.screenshot-caption_left {
+  top: 0;
+  left: -100%;
+}
+.screenshot-caption_topLeft {
+  top: -100%;
+  left: -100%;
+}
+
+.screenshot:hover .screenshot-caption {
+  top: 0;
+  left: 0;
+  -webkit-transition: all 0.25s ease-out;
+  -moz-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out;
+}
+
+.screenshot:hover .screenshot-caption > * {
+  -webkit-transition: opacity 1s ease;
+  -moz-transition: opacity 1s ease;
+  transition: opacity 1s ease;
+  opacity: 1;
+
+}
