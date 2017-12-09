@@ -1,0 +1,41 @@
+
+
+*,
+*:after,
+*:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+a {
+	color: #f0f0f0;
+	text-decoration: none;
+	font-weight: 700;
+	letter-spacing: 2px;
+	padding: 0 5px;
+}
+
+
+body {
+  margin: 0;
+  padding-top: 150px;
+}
+
+.sectionheader {
+  text-align: center;
+  display:inline-block;
+  position:relative;
+  padding-top: 100px;
+}
+
+.about-section  {
+  text-align: center;
+  color:  white;
+  background-color:  #4C000F;
+}
+
+.about-img{
+  background: url(../img/artpowerdiversity.jpg) no-repeat bottom center scroll;
+  position: relative;
+}
